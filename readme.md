@@ -6,7 +6,7 @@ El proyecto fue desarrollado con DataGrip y MySQL Workbench
 
 
 ## Database
-> the database name: 'tienda_db' <br>
+the database name: ``` tienda_db ```
 
 
 
