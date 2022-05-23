@@ -19,9 +19,9 @@ USE  tienda_db  ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS  tienda_db . proveedor  (
    id_proveedor  INT NOT NULL,
-   nombre_proveedor  VARCHAR(80) NULL,
+   nombre_proveedor  VARCHAR(80) NOT NULL,
   PRIMARY KEY ( id_proveedor ),
-  UNIQUE INDEX  idPROVEEDOR_UNIQUE  ( id_proveedor  ASC) VISIBLE)
+  UNIQUE INDEX  id_proveedor_UNIQUE  ( id_proveedor  ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
