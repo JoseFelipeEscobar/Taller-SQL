@@ -5,8 +5,6 @@
 -- COSULTAR PRODUCTOS VENDIDOS A UN CLIENTE INGRESANDO 
 -- EL NUMERO Y TIPO DE DOCUMENTO DE LA PERSONA
 -- ----------------------------------------------
-
-
 SELECT producto.id_producto,producto.nombre_producto
 FROM ((venta_producto
 INNER JOIN producto ON venta_producto.producto_id_producto=producto.id_producto)
@@ -32,7 +30,6 @@ INNER  JOIN producto ON proveedor.id_proveedor = producto.proveedor_id_proveedor
 -- PLUS: CONSULTA QUE PERMITE VER QUE PRODUCTO HAN
 -- SIDO LOS MAS VENDIDOS EN ORDEN DE MAYOR A MENOR
 -- ****************************************************
-
 SELECT  producto.nombre_producto,cantidad_items
 FROM ((venta_producto
 INNER JOIN producto ON venta_producto.producto_id_producto=producto.id_producto)
