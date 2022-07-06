@@ -5,7 +5,7 @@
 -- -----------------------------------------------------
 -- Schema tienda_db
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS  tienda_db  DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS  tienda_db  DEFAULT CHARACTER SET utf8mb4 ;
 USE  tienda_db  ;
 
 -- -----------------------------------------------------
