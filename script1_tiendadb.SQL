@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS  tienda_db . producto  (
     FOREIGN KEY ( proveedor_id_proveedor )
     REFERENCES  tienda_db . proveedor  ( id_proveedor )
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION )
+    ON UPDATE CASCADE )
 ENGINE = InnoDB;
 
 
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS  tienda_db . factura_venta  (
     FOREIGN KEY ( cliente_cliente_id )
     REFERENCES  tienda_db . cliente  ( cliente_id )
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION )
+    ON UPDATE CASCADE )
 ENGINE = InnoDB;
 
 
@@ -88,8 +88,8 @@ CREATE TABLE IF NOT EXISTS  tienda_db . venta_producto  (
   CONSTRAINT  fk_venta_producto_factura_venta1 
     FOREIGN KEY ( factura_venta_id_factura_venta )
     REFERENCES  tienda_db . factura_venta  ( id_factura_venta )
-    ON DELETE CASCADE
-    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE
 )
 ENGINE = InnoDB;
 
